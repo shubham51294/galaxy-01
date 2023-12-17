@@ -2,7 +2,7 @@ pipeline {
      agent{
         label {
             label "qa"
-            customWorkspace "/mnt/gal-1"
+            customWorkspace "/mnt/gal-2"
             }
           }
      stages {
@@ -10,7 +10,7 @@ pipeline {
               steps {
                   sh "sudo rm -rf *"
                   sh "sudo yum install git -y"
-                  sh "sudo git clone https://github.com/shubham51294/galaxy-01.git -b main"
+                  sh "sudo git clone https://github.com/shubham51294/galaxy-01.git -b 2023Q1"
 				  }
 				}
 		 stage ("two") {
