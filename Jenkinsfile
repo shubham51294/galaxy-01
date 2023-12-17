@@ -17,7 +17,7 @@ pipeline {
                        steps{ 
 		                  sh "sudo yum install httpd -y"
 				  sh "sudo systemctl start httpd"
-				  sh "sudo cp -r index.html /var/www/html/"
+				  sh "sudo cp -r galaxy-01/index.html /var/www/html/"
 				  sh "sudo chmod -R 777 /var/www/html/index.html"
                           }
                       }
